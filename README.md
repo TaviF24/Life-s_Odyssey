@@ -11,6 +11,7 @@ All the user stories can be found [here](https://trello.com/b/8hBGjg67/personas-
 ## Diagrams
 
 ### Workflow
-![Workflow Diagram](/diagrams/workflow.png)
+<img src="diagrams/workflow.png" alt="workflow" width="450"/>
+
 ### Gantt
-![Gantt Diagram](/diagrams/gantt.png)
+<img src="diagrams/gantt.png" alt="gantt" width="800"/>

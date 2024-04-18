@@ -53,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 47548ebe34fa34df0acd3c42176e0409, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -97,6 +97,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6965ac7c0fc4dc380d0953d5f9a964, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  pickUpDistance: 0.8
+  speed: 7
+  pickUpDistance: 1.2
   ttl: 10

@@ -63,22 +63,25 @@
     <Compile Include="Assets/Scripts/ToolHit.cs" />
     <Compile Include="Assets/Scripts/TreeCuttable.cs" />
     <Compile Include="Assets/Scripts/TalkInteract.cs" />
-    <Compile Include="Assets/ItemSpawnManager.cs" />
     <Compile Include="Assets/Scripts/Character.cs" />
+    <Compile Include="Assets/ToolbarController.cs" />
     <Compile Include="Assets/Scripts/PickUpItem.cs" />
     <Compile Include="Assets/Scripts/CharacterInteractController.cs" />
     <Compile Include="Assets/Scripts/InventoryController.cs" />
     <Compile Include="Assets/Scripts/CharacterController2D.cs" />
+    <Compile Include="Assets/Scripts/ItemDragAndDropController.cs" />
     <Compile Include="Assets/Scripts/GUI/InventoryButton.cs" />
     <Compile Include="Assets/Scripts/Interactable.cs" />
+    <Compile Include="Assets/ItemPanel.cs" />
     <Compile Include="Assets/Scripts/HighlightController.cs" />
     <Compile Include="Assets/Scripts/Data/Item.cs" />
-    <Compile Include="Assets/ItemDragAndDropController.cs" />
     <Compile Include="Assets/Scripts/ToolsCharacterController.cs" />
+    <Compile Include="Assets/Scripts/ItemSpawnManager.cs" />
     <Compile Include="Assets/Scripts/Data/ItemContainer.cs" />
     <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/DayTimeController.cs" />
     <Compile Include="Assets/Scripts/GUI/InventoryPanel.cs" />
+    <Compile Include="Assets/ItemToolbarPanel.cs" />
     <Compile Include="Assets/Scripts/LootContainerInteract.cs" />
   </ItemGroup>
   <ItemGroup>

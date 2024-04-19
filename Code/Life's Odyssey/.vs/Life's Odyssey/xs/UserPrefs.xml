@@ -1,30 +1,37 @@
 ﻿<Properties DisableMonoRequiredInfoBar="True" StartupConfiguration="{273FEE38-A552-6670-EA83-0CF844F6D0E2}|">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ItemDragAndDropController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/InventoryController.cs">
     <Files>
-      <File FileName="Assets/ItemDragAndDropController.cs" Line="70" Column="1" />
       <File FileName="Assets/Scripts/Data/ItemContainer.cs" Line="21" Column="28" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="19" Column="1" />
-      <File FileName="Assets/ItemSpawnManager.cs" Line="19" Column="39" />
-      <File FileName="Assets/Scripts/PickUpItem.cs" Line="20" Column="17" />
-      <File FileName="Assets/Scripts/TreeCuttable.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/GameManager.cs" />
+      <File FileName="Assets/Scripts/PickUpItem.cs" />
+      <File FileName="Assets/Scripts/TreeCuttable.cs" />
+      <File FileName="Assets/Scripts/GUI/InventoryPanel.cs" Line="11" Column="16" />
+      <File FileName="Assets/ToolbarController.cs" Line="16" Column="40" />
+      <File FileName="Assets/Scripts/GUI/InventoryButton.cs" Line="48" Column="34" />
+      <File FileName="Assets/ItemPanel.cs" Line="12" Column="16" />
+      <File FileName="Assets/ItemToolbarPanel.cs" Line="11" Column="16" />
+      <File FileName="Assets/Scripts/InventoryController.cs" Line="11" Column="6" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Life's Odyssey" expanded="True">
             <Node name="Assets" expanded="True">
-              <Node name="Editor" expanded="True" />
+              <Node name="Scripts" expanded="True">
+                <Node name="GUI" expanded="True" />
+                <Node name="InventoryController.cs" selected="True" />
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="45e0b505-098c-4462-b935-b0237de643eb" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="508b339a-9f6d-4f15-8374-d61261548801" />
 </Properties>

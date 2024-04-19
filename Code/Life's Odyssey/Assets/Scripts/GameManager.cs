@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     /*--------Singleton--------*/
 
-    public static GameManager instance = null;
+    public static GameManager instance;
 
     private void Awake()
     {
@@ -14,4 +14,6 @@ public class GameManager : MonoBehaviour
     }
 
     public GameObject player;
+    public ItemContainer inventoryContainer;
+    public ItemDragAndDropController dragAndDropController;
 }

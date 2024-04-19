@@ -146,6 +146,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &188681573905776751
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,6 +294,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &873727549524947833
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +442,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &1108430736445259104
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +590,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &2277626827182017212
 GameObject:
   m_ObjectHideFlags: 0
@@ -730,6 +738,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &2410756786025886438
 GameObject:
   m_ObjectHideFlags: 0
@@ -876,6 +886,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &2441770524916019888
 GameObject:
   m_ObjectHideFlags: 0
@@ -1022,6 +1034,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &2518238388680319725
 GameObject:
   m_ObjectHideFlags: 0
@@ -1168,6 +1182,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &2528126969268137514
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,6 +1330,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &2910488065600055623
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,6 +1478,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &3102375952836835474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,6 +1626,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &3290056811836179122
 GameObject:
   m_ObjectHideFlags: 0
@@ -1752,6 +1774,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &3312087992712780193
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,6 +1922,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &3393203845749519464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2044,6 +2070,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &3744914501480484555
 GameObject:
   m_ObjectHideFlags: 0
@@ -2190,6 +2218,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &4702231999416680366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2336,6 +2366,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &5354731512480277465
 GameObject:
   m_ObjectHideFlags: 0
@@ -2482,6 +2514,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &5551423351412377504
 GameObject:
   m_ObjectHideFlags: 0
@@ -2628,6 +2662,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &5656536604333945039
 GameObject:
   m_ObjectHideFlags: 0
@@ -2774,6 +2810,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &6669522543758185524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2920,6 +2958,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &7023236620792183706
 GameObject:
   m_ObjectHideFlags: 0
@@ -3066,6 +3106,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &7559396246787097409
 GameObject:
   m_ObjectHideFlags: 0
@@ -3267,6 +3309,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &8744386066128130725
 GameObject:
   m_ObjectHideFlags: 0
@@ -3413,6 +3457,8 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10
 --- !u!1 &9126468070475514647
 GameObject:
   m_ObjectHideFlags: 0
@@ -3559,3 +3605,5 @@ MonoBehaviour:
   pickUpDrop: {fileID: 4879116028507403690, guid: 957fd5121ffd443b9ab3e41faaa21b23, type: 3}
   dropCount: 5
   spread: 0.7
+  item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
+  itemCountInOneDrop: 10

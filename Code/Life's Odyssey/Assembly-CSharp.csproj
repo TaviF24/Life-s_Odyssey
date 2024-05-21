@@ -62,8 +62,8 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\MarkerManager.cs" />
     <Compile Include="Assets\Scripts\ToolHit.cs" />
+    <Compile Include="Assets\TilePickUpAction.cs" />
     <Compile Include="Assets\Scripts\TalkInteract.cs" />
-    <Compile Include="Assets\ToolAction.cs" />
     <Compile Include="Assets\Scripts\Character.cs" />
     <Compile Include="Assets\Scripts\PickUpItem.cs" />
     <Compile Include="Assets\Scripts\ToolbarController.cs" />
@@ -72,18 +72,23 @@
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\ItemDragAndDropController.cs" />
     <Compile Include="Assets\Scripts\GUI\InventoryButton.cs" />
+    <Compile Include="Assets\Scripts\TimeAgent.cs" />
     <Compile Include="Assets\Scripts\CropsManager.cs" />
+    <Compile Include="Assets\Scripts\Actions\ToolAction.cs" />
+    <Compile Include="Assets\Scripts\Actions\PlowTile.cs" />
+    <Compile Include="Assets\Scripts\ItemSpawner.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\HighlightController.cs" />
+    <Compile Include="Assets\Scripts\Actions\GatherResourceNode.cs" />
     <Compile Include="Assets\Scripts\Data\Item.cs" />
     <Compile Include="Assets\Scripts\GUI\ItemPanel.cs" />
     <Compile Include="Assets\Scripts\ToolsCharacterController.cs" />
     <Compile Include="Assets\Scripts\ItemSpawnManager.cs" />
-    <Compile Include="Assets\GatherResourceNode.cs" />
     <Compile Include="Assets\Scripts\Data\ItemContainer.cs" />
+    <Compile Include="Assets\Scripts\Crop.cs" />
     <Compile Include="Assets\Scripts\TileMapReadController.cs" />
+    <Compile Include="Assets\Scripts\Actions\SeedTile.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\TileData.cs" />
     <Compile Include="Assets\Scripts\GUI\ItemToolbarPanel.cs" />
     <Compile Include="Assets\Scripts\DayTimeController.cs" />
     <Compile Include="Assets\Scripts\ResourceNode.cs" />

@@ -51,6 +51,15 @@ public class TileMapReadController : MonoBehaviour
 
     public TileData GetTileData(TileBase tilebase)
     {
+        if (tilebase == null)
+        {
+            return null;
+        }
+        if (dataFromTiles.ContainsKey(tilebase) == false)
+        {
+            return null;
+        }
+
         return dataFromTiles[tilebase];
     }
 

@@ -1,7 +1,6 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
 [Serializable]
@@ -89,27 +88,4 @@ public class ItemContainer : ScriptableObject
             }
         }
     }
-
-    internal bool CheckItem(ItemSlot checkingItem)
-    {
-        ItemSlot itemSlot=slots.Find(x => x.item == checkingItem.item);
-        if(itemSlot==null){return false;}
-
-        if(checkingItem.item.stackable){return itemSlot.count > checkingItem.count;}
-        return true;
-    }
-
-
-    internal bool FreeSpace()
-    {
-        for(int i=0;i<slots.Count;i++)
-            {
-                if(slots[i].item==null)
-                {
-                    return true;
-                }
-            }
-        return false;
-    }
-
 }

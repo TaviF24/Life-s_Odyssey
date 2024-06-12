@@ -92,7 +92,6 @@
     <Compile Include="Assets\Scripts\Data\DialogueContainer.cs" />
     <Compile Include="Assets\Scripts\Data\CraftingRecipe.cs" />
     <Compile Include="Assets\Scripts\GUI\ItemPanel.cs" />
-    <Compile Include="Assets\MusicManager.cs" />
     <Compile Include="Assets\Scripts\ToolsCharacterController.cs" />
     <Compile Include="Assets\Scripts\ItemSpawnManager.cs" />
     <Compile Include="Assets\Scripts\CameraConfiner.cs" />
@@ -110,7 +109,6 @@
     <Compile Include="Assets\Scripts\GUI\InventoryPanel.cs" />
     <Compile Include="Assets\Scripts\Data\DialogueSystem.cs" />
     <Compile Include="Assets\Scripts\LootContainerInteract.cs" />
-    <Compile Include="Assets\AudioManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

@@ -38,41 +38,43 @@ public class CropsManager : MonoBehaviour
 
     public void PickUp(Vector3Int position)
     {
-        if (cropsManager == null) 
+        if (cropsManager == null)
         {
-            Debug.LogWarning("No tilemap crops manager are referenced crops manager");
-            return; 
+            Debug.LogWarning("tilemap crop manager null in crops manager");
+            return;
         }
         cropsManager.PickUp(position);
     }
 
     public bool Check(Vector3Int position)
-	{
-		if (cropsManager == null)
-		{
-			Debug.LogWarning("No tilemap crops manager are referenced crops manager");
-			return false;
-		}
-		return cropsManager.Check(position);
+    {
+        if (cropsManager == null)
+        {
+            Debug.LogWarning("tilemap crop manager null in crops manager");
+            return false;
+        }
+        return cropsManager.Check(position);
     }
 
-    public void Seed(Vector3Int position, Crop toBeSeeded)
-	{
-		if (cropsManager == null)
-		{
-			Debug.LogWarning("No tilemap crops manager are referenced crops manager");
-			return;
-		}
-		cropsManager.Seed(position, toBeSeeded);
+    public void Seed(Vector3Int position, Crop toSeed)
+    {
+        if (cropsManager == null)
+        {
+            Debug.LogWarning("tilemap crop manager null in crops manager");
+            return;
+        }
+
+        cropsManager.Seed(position, toSeed);
     }
 
     public void Plow(Vector3Int position)
-	{
-		if (cropsManager == null)
-		{
-			Debug.LogWarning("No tilemap crops manager are referenced crops manager");
-			return;
-		}
-		cropsManager.Plow(position);
+    {
+        if (cropsManager == null)
+        {
+            Debug.LogWarning("tilemap crop manager null in crops manager");
+            return;
+        }
+
+        cropsManager.Plow(position);
     }
 }

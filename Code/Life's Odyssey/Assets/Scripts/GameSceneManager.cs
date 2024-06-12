@@ -44,6 +44,8 @@ public class GameSceneManager : MonoBehaviour
 			yield return new WaitForSeconds(0.1f);
 		}
 
+		SceneManager.SetActiveScene(SceneManager.GetSceneByName(currentScene));
+
 		cameraConfiner.UpdateBounds();
 		screenTint.UnTint();
 	}

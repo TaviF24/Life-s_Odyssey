@@ -11,6 +11,13 @@ public class TileMapReadController : MonoBehaviour
 
     public Vector3Int GetGridPosition(Vector2 position, bool mousePosition)
     {
+        if (tilemap == null)
+        {
+            tilemap = GameObject.Find("BaseTilemap").GetComponent<Tilemap>();
+        }
+
+        if (tilemap == null) { return Vector3Int.zero; }
+        
         Vector3 worldPosition;
 
         if (mousePosition)
@@ -28,8 +35,15 @@ public class TileMapReadController : MonoBehaviour
 
     public TileBase GetTileBase(Vector3Int gridPosition)
     {
-        
-        TileBase tile = tilemap.GetTile(gridPosition);  // type of tile you are clicking
+
+		if (tilemap == null)
+		{
+			tilemap = GameObject.Find("BaseTilemap").GetComponent<Tilemap>();
+		}
+
+		if (tilemap == null) { return null; }
+
+		TileBase tile = tilemap.GetTile(gridPosition);  // type of tile you are clicking
 
         Debug.Log(gridPosition + " " + tile);
 

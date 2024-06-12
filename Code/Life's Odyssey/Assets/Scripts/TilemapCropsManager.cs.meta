@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 80304900e4a787a46acc414614d0c698
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - plowed: {fileID: 11400000, guid: c1353838084a7a94096e60dc3172a6c6, type: 2}
+  - seeded: {fileID: 11400000, guid: c4984a0a25c71cb4f849c7b3207e8af8, type: 2}
+  - cropsSpritePrefab: {fileID: 5190806748521687399, guid: e43fdfd9e327a6a439b856e767f6e9c8, type: 3}
+  - container: {fileID: 11400000, guid: 1534b7a445cc0bc428ad4835a24ea4c0, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

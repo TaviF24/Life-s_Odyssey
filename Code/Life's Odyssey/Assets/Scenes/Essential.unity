@@ -1060,7 +1060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c552067c59dd449e853838478f2c665, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemap: {fileID: 2024439357}
+  tilemap: {fileID: 0}
   cropsManager: {fileID: 129940705}
 --- !u!114 &129940705
 MonoBehaviour:
@@ -1074,6 +1074,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 490bc79456dc394438add7a636f39bf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cropsManager: {fileID: 0}
 --- !u!114 &129940706
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3543,12 +3544,12 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.87, z: -10.1}
+  m_LocalPosition: {x: 0, y: 0.45, z: -10.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 10.835, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -0.23, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5707,6 +5708,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32b782c656414f14e85fc7d99be503ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetText: {fileID: 0}
+  nameText: {fileID: 0}
+  portrait: {fileID: 0}
+  visibleTextPercent: 0
+  timePerLetter: 0.05
 --- !u!114 &897823306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8144,7 +8150,7 @@ Transform:
   m_GameObject: {fileID: 1270568682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.87, z: -10.1}
+  m_LocalPosition: {x: 0, y: 0.45, z: -10.1}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10092,7 +10098,7 @@ Transform:
   m_GameObject: {fileID: 1695382876}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 12.87, z: -0.1}
+  m_LocalPosition: {x: 0, y: 0.45, z: -0.1}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12253,7 +12259,7 @@ GameObject:
   - component: {fileID: 2024439356}
   - component: {fileID: 2024439355}
   m_Layer: 0
-  m_Name: MarkerTilemap
+  m_Name: BaseTilemap
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12268,7 +12274,7 @@ Transform:
   m_GameObject: {fileID: 2024439353}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

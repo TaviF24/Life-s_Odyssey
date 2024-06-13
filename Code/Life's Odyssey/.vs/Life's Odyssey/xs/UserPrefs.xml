@@ -1,26 +1,21 @@
 ﻿<Properties StartupConfiguration="{273FEE38-A552-6670-EA83-0CF844F6D0E2}|" DisableMonoRequiredInfoBar="True">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1ab356a9-549e-41bb-9220-7881aad713bc" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/ToolsCharacterController.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dda73d25-4bac-4584-b14c-7236bc8d0521" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MusicManager.cs">
     <Files>
-      <File FileName="Assets/Scripts/Data/ItemContainer.cs" />
-      <File FileName="Assets/Scripts/GameManager.cs" />
-      <File FileName="Assets/Scripts/PickUpItem.cs" />
-      <File FileName="Assets/Scripts/TreeCuttable.cs" />
-      <File FileName="Assets/Scripts/GUI/InventoryPanel.cs" />
-      <File FileName="Assets/Scripts/GUI/InventoryButton.cs" />
-      <File FileName="Assets/Scripts/InventoryController.cs" />
-      <File FileName="Assets/TileData.cs" Line="11" Column="27" />
-      <File FileName="Assets/Scripts/ToolsCharacterController.cs" Line="33" Column="57" />
-      <File FileName="Assets/TileMapReadController.cs" Line="1" Column="2" />
-      <File FileName="Assets/MarkerManager.cs" Line="18" Column="46" />
+      <File FileName="Assets/MusicManager.cs" Line="8" Column="1" />
+      <File FileName="Assets/AudioManager.cs" Line="42" Column="28" />
+      <File FileName="Assets/Scripts/LootContainerInteract.cs" Line="20" Column="52" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Life's Odyssey">
-            <Node name="Assets" expanded="True" />
+          <Node name="Life's Odyssey" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Data" expanded="True" />
+                <Node name="MusicManager.cs" selected="True" />
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
@@ -29,5 +24,7 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

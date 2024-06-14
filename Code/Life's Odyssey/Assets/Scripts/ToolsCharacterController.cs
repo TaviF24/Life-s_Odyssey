@@ -36,7 +36,7 @@ public class ToolsCharacterController : MonoBehaviour
         SelectTile();
         CanSelectCheck();
         Marker();
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButtonDown(0))
         {
             if (UseToolWorld() == true)
             {

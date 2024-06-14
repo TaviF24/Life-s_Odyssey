@@ -7,12 +7,14 @@ using UnityEngine.Tilemaps;
 public class PlowTile : ToolAction
 {
     [SerializeField] List<TileBase> canPlow;
-    public override bool OnApplyToTileMap(Vector3Int gridPosition, TileMapReadController tileMapReadController, Item item   )
+    public override bool OnApplyToTileMap(Vector3Int gridPosition, TileMapReadController tileMapReadController, Item item)
     {
-        TileBase tileToPlow = tileMapReadController.GetTileBase(gridPosition);
 
+        TileBase tileToPlow = tileMapReadController.GetTileBase(gridPosition);
         // nu apare Plowed pentru Plowable Dirt si nici pentru Grass ???
-        // if (canPlow.Contains(tileToPlow) == false) { return false; }
+         if (canPlow.Contains(tileToPlow) == false) {
+            return false;
+         }
 
         tileMapReadController.cropsManager.Plow(gridPosition);
 

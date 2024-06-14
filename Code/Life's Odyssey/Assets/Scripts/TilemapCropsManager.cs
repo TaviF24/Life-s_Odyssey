@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
+using static UnityEditor.Progress;
 
 public class TilemapCropsManager : TimeAgent
 {
@@ -145,7 +146,10 @@ public class TilemapCropsManager : TimeAgent
 
         if (tile.Complete)
         {
-            ItemSpawnManager.instance.SpawnItem(targetTilemap.CellToWorld(gridPosition), tile.crop.yield, tile.crop.count);
+            ItemSpawnManager.instance.SpawnItem(
+                targetTilemap.CellToWorld(gridPosition),
+                tile.crop.yield,
+                tile.crop.count);
 
             tile.Harvested();
 

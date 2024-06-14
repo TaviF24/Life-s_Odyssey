@@ -63,8 +63,10 @@
     <Compile Include="Assets/Scripts/MarkerManager.cs" />
     <Compile Include="Assets/Scripts/ToolHit.cs" />
     <Compile Include="Assets/Scripts/CropsContainer.cs" />
+    <Compile Include="Assets/PlaceableObjectsManager.cs" />
     <Compile Include="Assets/Scripts/TalkInteract.cs" />
     <Compile Include="Assets/Scripts/Character.cs" />
+    <Compile Include="Assets/PlaceObject.cs" />
     <Compile Include="Assets/Scripts/PickUpItem.cs" />
     <Compile Include="Assets/Scripts/ToolbarController.cs" />
     <Compile Include="Assets/Scripts/Crafting.cs" />
@@ -105,7 +107,9 @@
     <Compile Include="Assets/Scripts/GameManager.cs" />
     <Compile Include="Assets/Scripts/GUI/PanelGroup.cs" />
     <Compile Include="Assets/Scripts/Actions/TilePickUpAction.cs" />
+    <Compile Include="Assets/PlaceableObjectsContainer.cs" />
     <Compile Include="Assets/Scripts/GUI/ItemToolbarPanel.cs" />
+    <Compile Include="Assets/PlaceableObjectsReferenceManager.cs" />
     <Compile Include="Assets/Scripts/Data/Actor.cs" />
     <Compile Include="Assets/Scripts/DayTimeController.cs" />
     <Compile Include="Assets/Scripts/ResourceNode.cs" />

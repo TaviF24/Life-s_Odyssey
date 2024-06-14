@@ -1,30 +1,30 @@
 ﻿<Properties StartupConfiguration="{273FEE38-A552-6670-EA83-0CF844F6D0E2}|" DisableMonoRequiredInfoBar="True">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="dda73d25-4bac-4584-b14c-7236bc8d0521" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MusicManager.cs">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/PlaceableObjectsReferenceManager.cs">
     <Files>
-      <File FileName="Assets/MusicManager.cs" Line="8" Column="1" />
-      <File FileName="Assets/AudioManager.cs" Line="42" Column="28" />
-      <File FileName="Assets/Scripts/LootContainerInteract.cs" Line="20" Column="52" />
+      <File FileName="Assets/PlaceableObjectsReferenceManager.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/TileMapReadController.cs" Line="1" Column="1" />
+      <File FileName="Assets/PlaceableObjectsManager.cs" Line="1" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Life's Odyssey" expanded="True">
+          <Node name="Life's Odyssey">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
                 <Node name="Data" expanded="True" />
-                <Node name="MusicManager.cs" selected="True" />
               </Node>
+              <Node name="PlaceableObjectsReferenceManager.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="07a910d6-be42-4006-aef4-a2d596ead9fa" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

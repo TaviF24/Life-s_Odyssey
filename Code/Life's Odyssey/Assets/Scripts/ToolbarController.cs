@@ -49,7 +49,7 @@ public class ToolbarController : MonoBehaviour
         }
     }
 
-    void UpdateHighlightIcon(int id)
+    public void UpdateHighlightIcon(int id = 0)
     {
         Item item = GetItem;
         if(item==null){

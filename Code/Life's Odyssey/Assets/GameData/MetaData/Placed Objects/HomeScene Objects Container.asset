@@ -12,4 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 721c877bd655140aea4741932ca764ac, type: 3}
   m_Name: HomeScene Objects Container
   m_EditorClassIdentifier: 
-  placeableObjects: []
+  placeableObjects:
+  - placedItem: {fileID: 11400000, guid: 3b56f773289c85347816c81d5de8ae07, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -49, y: -123, z: 0}
+  - placedItem: {fileID: 11400000, guid: 3b56f773289c85347816c81d5de8ae07, type: 2}
+    targetObject: {fileID: 0}
+    positionOnGrid: {x: -45, y: -123, z: 0}

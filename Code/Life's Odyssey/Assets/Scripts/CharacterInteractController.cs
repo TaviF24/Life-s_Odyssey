@@ -21,7 +21,7 @@ public class CharacterInteractController : MonoBehaviour
     private void Update()
     {
         Check();
-        if (Input.GetMouseButton(1))
+        if (Input.GetMouseButtonDown(1))
         {
             Interact();
         }

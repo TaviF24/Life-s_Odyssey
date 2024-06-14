@@ -179,7 +179,8 @@ MonoBehaviour:
   closedChest: {fileID: 7493634484842830263}
   openedChest: {fileID: 563724557516813376}
   opened: 0
-  onOpenAudio: {fileID: 0}
+  onOpenAudio: {fileID: 8300000, guid: ec6397338d2ea4d9eb0422c2f94212bb, type: 3}
+  itemContainer: {fileID: 11400000, guid: 728d36c8935cf364fba70997be7ab2f9, type: 2}
 --- !u!1 &7493634484842830263
 GameObject:
   m_ObjectHideFlags: 0

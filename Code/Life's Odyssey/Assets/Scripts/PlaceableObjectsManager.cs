@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -44,11 +45,32 @@ public class PlaceableObjectsManager : MonoBehaviour
         placeableObject.targetObject = go.transform;
 	}
 
+    public bool Check(Vector3Int position){
+        return placeableObjects.Get(position) !=null;
+    }
 	public void Place(Item item, Vector3Int positionOnGrid)
     {
+        if(Check(positionOnGrid)==true){
+            return;
+        }
         PlaceableObject placeableObject = new PlaceableObject(item, positionOnGrid);
         VisualizeItem(placeableObject);
 
         placeableObjects.placeableObjects.Add(placeableObject);
+    }
+
+    internal void PickUp(Vector3Int gridPosition)
+    {
+        PlaceableObject placedObject = placeableObjects.Get(gridPosition);
+        if(placedObject == null){
+            return;
+        }
+
+        ItemSpawnManager.instance.SpawnItem(targetTilemap.CellToWorld(gridPosition), 
+                                            placedObject.placedItem,
+                                            1
+                                            );
+        Destroy(placedObject.targetObject.gameObject);
+        placeableObjects.Remove(placedObject);
     }
 }

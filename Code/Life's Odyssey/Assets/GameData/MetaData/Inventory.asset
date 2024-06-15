@@ -23,14 +23,14 @@ MonoBehaviour:
     count: 0
   - item: {fileID: 11400000, guid: b142ea8df6c1a465cb7db93760d3751d, type: 2}
     count: 42
-  - item: {fileID: 0}
-    count: 0
-  - item: {fileID: 11400000, guid: b74a8061ea9da4981a990d564f2f0c2d, type: 2}
-    count: 9
-  - item: {fileID: 0}
-    count: 0
   - item: {fileID: 11400000, guid: 9cfaa878023cc461c9203abe93ccdcd7, type: 2}
-    count: 996
+    count: 983
+  - item: {fileID: 11400000, guid: b74a8061ea9da4981a990d564f2f0c2d, type: 2}
+    count: 18
+  - item: {fileID: 0}
+    count: 0
+  - item: {fileID: 0}
+    count: 0
   - item: {fileID: 0}
     count: 0
   - item: {fileID: 0}

@@ -23,9 +23,5 @@ MonoBehaviour:
     objectState: 
   - placedItem: {fileID: 11400000, guid: 32f62ecd25e814a86a6b7781bb201f3b, type: 2}
     targetObject: {fileID: 0}
-    positionOnGrid: {x: -60, y: -121, z: 0}
-    objectState: '{"itemSlot":{"item":{"instanceID":0},"count":0},"timer":-0.0004971481394022703}'
-  - placedItem: {fileID: 11400000, guid: 32f62ecd25e814a86a6b7781bb201f3b, type: 2}
-    targetObject: {fileID: 0}
-    positionOnGrid: {x: -45, y: -107, z: 0}
-    objectState: '{"itemSlot":{"item":{"instanceID":0},"count":0},"timer":0.0}'
+    positionOnGrid: {x: -60, y: -118, z: 0}
+    objectState: '{"itemSlot":{"item":{"instanceID":0},"count":0},"timer":0}'

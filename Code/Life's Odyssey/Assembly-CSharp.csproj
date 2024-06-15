@@ -63,7 +63,6 @@
     <Compile Include="Assets/Scripts/MarkerManager.cs" />
     <Compile Include="Assets/Scripts/ToolHit.cs" />
     <Compile Include="Assets/Scripts/CropsContainer.cs" />
-    <Compile Include="Assets/IPersistent.cs" />
     <Compile Include="Assets/Scripts/TalkInteract.cs" />
     <Compile Include="Assets/Scripts/Character.cs" />
     <Compile Include="Assets/Scripts/PickUpItem.cs" />
@@ -104,6 +103,7 @@
     <Compile Include="Assets/Scripts/GUI/ItemPanel.cs" />
     <Compile Include="Assets/Scripts/ToolsCharacterController.cs" />
     <Compile Include="Assets/Scripts/ItemSpawnManager.cs" />
+    <Compile Include="Assets/Scripts/Data/IPersistent.cs" />
     <Compile Include="Assets/Scripts/CameraConfiner.cs" />
     <Compile Include="Assets/Scripts/Data/ItemContainer.cs" />
     <Compile Include="Assets/Scripts/Crop.cs" />

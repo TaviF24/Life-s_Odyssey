@@ -63,6 +63,7 @@
     <Compile Include="Assets/Scripts/MarkerManager.cs" />
     <Compile Include="Assets/Scripts/ToolHit.cs" />
     <Compile Include="Assets/Scripts/CropsContainer.cs" />
+    <Compile Include="Assets/IPersistent.cs" />
     <Compile Include="Assets/Scripts/TalkInteract.cs" />
     <Compile Include="Assets/Scripts/Character.cs" />
     <Compile Include="Assets/Scripts/PickUpItem.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets/Scripts/ItemContainerPanel.cs" />
     <Compile Include="Assets/Scripts/CharacterInteractController.cs" />
     <Compile Include="Assets/Scripts/Data/RecipeList.cs" />
+    <Compile Include="Assets/Scripts/ItemConverterInteract.cs" />
     <Compile Include="Assets/Scripts/InventoryController.cs" />
     <Compile Include="Assets/Scripts/CharacterController2D.cs" />
     <Compile Include="Assets/Scripts/ItemDragAndDropController.cs" />
@@ -115,7 +117,6 @@
     <Compile Include="Assets/Scripts/DayTimeController.cs" />
     <Compile Include="Assets/Scripts/PlaceableObjectsManager.cs" />
     <Compile Include="Assets/Scripts/ResourceNode.cs" />
-    <Compile Include="Assets/ItemConverterInteract.cs" />
     <Compile Include="Assets/Scripts/GUI/InventoryPanel.cs" />
     <Compile Include="Assets/Scripts/Data/DialogueSystem.cs" />
     <Compile Include="Assets/Scripts/LootContainerInteract.cs" />

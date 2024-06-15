@@ -112,4 +112,12 @@ public class ItemContainer : ScriptableObject
         return false;
     }
 
+    internal void Init(){
+        slots=new List<ItemSlot>();
+        for(int i=0;i<36;i++)
+        {
+            slots.Add(new ItemSlot());
+        }
+    }
+
 }

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Smelter
   m_EditorClassIdentifier: 
   Name: Smelter
+  id: 7
   stackable: 0
   icon: {fileID: 1524218773, guid: 2aea05d80b06b480e8d592f16ed5a975, type: 3}
   onAction: {fileID: 0}

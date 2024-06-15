@@ -1173,6 +1173,7 @@ MonoBehaviour:
   timeController: {fileID: 129940701}
   dialogueSystem: {fileID: 897823305}
   placeableObjects: {fileID: 0}
+  itemDB: {fileID: 11400000, guid: c62a337748d219e4e8075341599f6018, type: 2}
 --- !u!4 &129940699
 Transform:
   m_ObjectHideFlags: 0

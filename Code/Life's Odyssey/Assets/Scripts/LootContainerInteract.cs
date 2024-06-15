@@ -99,7 +99,7 @@ public class LootContainerInteract : Interactable , IPersistent
 
     public void Load(string jsonString)
     {
-		if(jsonString=="" || jsonString== "{}")
+		if(jsonString=="" || jsonString== "{}" || jsonString == null)
 		{return;}
 		if(itemContainer == null){
 			Init();

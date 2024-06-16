@@ -13,6 +13,8 @@ public class InventoryController : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.I))
         {
+            // open inventory on key press I
+            // show inventory panel, hide toolbar panel
             if( panel.activeInHierarchy == false)
             {
                 Open();

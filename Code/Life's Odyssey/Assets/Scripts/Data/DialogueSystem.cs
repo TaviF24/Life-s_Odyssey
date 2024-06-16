@@ -21,6 +21,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void Update()
     {
+        // show the whole text if left clicked
         if (Input.GetMouseButtonDown(0))
         {
             PushText();
@@ -30,6 +31,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void TypeOutText()
     {
+        // animate text, to show bit by bit over period of time
         if (visibleTextPercent >= 1f) { return;  }
         currentTime += Time.deltaTime;
         visibleTextPercent = currentTime / totalTimeToType;
@@ -39,6 +41,7 @@ public class DialogueSystem : MonoBehaviour
 
     void UpdateText()
     {
+        // update the text on screen to show new line
         int letterCount = (int)(lineToShow.Length * visibleTextPercent);
         targetText.text = lineToShow.Substring(0, letterCount);
     }
@@ -52,6 +55,7 @@ public class DialogueSystem : MonoBehaviour
             return;
         }
 
+        // check whether there is more text to show or to close dialogue
         if (currentTextLine >= currentDialogue.lines.Count)
         {
             Conclude();
@@ -64,6 +68,7 @@ public class DialogueSystem : MonoBehaviour
 
     void CycleLine()
     {
+        // get next String text to show
         lineToShow = currentDialogue.lines[currentTextLine];
         totalTimeToType = lineToShow.Length * timePerLetter;
         currentTime = 0f;
@@ -75,6 +80,7 @@ public class DialogueSystem : MonoBehaviour
 
     public void Initialize(DialogueContainer dialogueContainer)
     {
+        // when interacting with NPC
         Show(true);
         currentDialogue = dialogueContainer;
         currentTextLine = 0;
@@ -84,6 +90,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void UpdatePortrait()
     {
+        // show NPC's portrait on bottom left dialogue canvas
         portrait.sprite = currentDialogue.actor.portrait;
         nameText.text = currentDialogue.actor.name;
     }
@@ -95,6 +102,7 @@ public class DialogueSystem : MonoBehaviour
 
     private void Conclude()
     {
+        // close dialogue box
         Debug.Log("dialogue Ended!");
         Show(false);
     }

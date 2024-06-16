@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// abstract class to define tool actions, must override methods!
 public class ToolAction : ScriptableObject
 {
     public virtual bool OnApply(Vector2 worldPoint)

@@ -4,7 +4,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 using UnityEngine.UIElements;
-using static UnityEditor.Progress;
 
 public class TilemapCropsManager : TimeAgent
 {
@@ -30,7 +29,7 @@ public class TilemapCropsManager : TimeAgent
     {
         for (int i = 0; i < container.crops.Count; i++)
         {
-            VisualizeTile(container.crops[i]);
+            VisualizeTile(container.crops[i]); // call method to visualize each crop tile
         }
     }
 
@@ -38,7 +37,7 @@ public class TilemapCropsManager : TimeAgent
     {
         for (int i = 0; i < container.crops.Count; i++)
         {
-            container.crops[i].renderer = null;
+            container.crops[i].renderer = null; // clear references to crop renders
         }
     }
 
@@ -51,14 +50,14 @@ public class TilemapCropsManager : TimeAgent
 
         foreach (CropTile cropTile in container.crops)
         {
-            if (cropTile.crop == null) { continue; }
+            if (cropTile.crop == null) { continue; } // ignore if no crop planted
 
-            cropTile.damage += 0.02f;
+            cropTile.damage += 0.02f; // increase damage from crop over time
 
             if (cropTile.damage > 1f)
             {
-                cropTile.Harvested();
-                targetTilemap.SetTile(cropTile.position, plowed);
+                cropTile.Harvested(); // 'destroy' crop if too damaged
+                targetTilemap.SetTile(cropTile.position, plowed); // reset tile to plowed state
                 continue;
             }
 
@@ -69,10 +68,11 @@ public class TilemapCropsManager : TimeAgent
 
             }
 
-            cropTile.growTimer += 1;
+            cropTile.growTimer += 1; // grow timer increase by 1
 
             if (cropTile.growTimer >= cropTile.crop.growthStageTime[cropTile.growStage])
             {
+                // set the current sprite forr the crop based on growth timer and stage
                 cropTile.renderer.gameObject.SetActive(true);
                 cropTile.renderer.sprite = cropTile.crop.sprites[cropTile.growStage];
 
@@ -88,12 +88,14 @@ public class TilemapCropsManager : TimeAgent
 
     public void Plow(Vector3Int position)
     {
+        // plow the selected tile
         if (Check(position) == true) { return; }
         CreatePlowedTile(position);
     }
 
     public void Seed(Vector3Int position, Crop toSeed)
     {
+        // seed the selected tile
         CropTile tile = container.Get(position);
 
         if (tile == null) { return; }
@@ -105,6 +107,7 @@ public class TilemapCropsManager : TimeAgent
 
     public void VisualizeTile(CropTile cropTile)
     {
+        // update the tilemap with all crops in case of scene transitions
         targetTilemap.SetTile(cropTile.position, cropTile.crop != null ? seeded : plowed);
 
         if (cropTile.renderer == null)
@@ -138,6 +141,7 @@ public class TilemapCropsManager : TimeAgent
 
     internal void PickUp(Vector3Int gridPosition)
     {
+        // harvest the crop if done growing and not yet destroyed by damage
         Vector2Int position = (Vector2Int)gridPosition;
         CropTile tile = container.Get(gridPosition);
 

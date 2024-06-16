@@ -14,11 +14,12 @@ public class ItemDragAndDropController : MonoBehaviour
 
     internal void RemoveItem(int count = 1)
     {
+        // remove a specified number of items from the slot
         if (itemSlot == null) { return; }
 
         if (itemSlot.item.stackable)
         {
-            itemSlot.count -= count;
+            itemSlot.count -= count; // decrease count for STACKABLE items
             if (itemSlot.count <= 0)
             {
                 itemSlot.Clear();
@@ -26,13 +27,14 @@ public class ItemDragAndDropController : MonoBehaviour
         }
         else
         {
-            itemSlot.Clear();
+            itemSlot.Clear(); // if unstackable just delete
         }
         UpdateIcon();
     }
 
     public bool Check(Item item, int count = 1)
     {
+        // check the inventory slot for an item and its count
         if (itemSlot == null) { return false; }
 
         if (item.stackable)
@@ -54,10 +56,12 @@ public class ItemDragAndDropController : MonoBehaviour
         {
             if(itemSlot.item == this.itemSlot.item)
             {
+                // combine stackable items
                 itemSlot.count += this.itemSlot.count;
                 this.itemSlot.Clear();
             }
 
+            // swap items between held slot and clicked slot
             Item item = itemSlot.item;
             int count = itemSlot.count;
 
@@ -69,6 +73,7 @@ public class ItemDragAndDropController : MonoBehaviour
 
     private void UpdateIcon()
     {
+        // update icon base on current selected item slot
         if(itemSlot.item == null)
         {
             itemIcon.SetActive(false);
@@ -91,20 +96,25 @@ public class ItemDragAndDropController : MonoBehaviour
     {
         if(itemIcon.activeInHierarchy == true)
         {
+            // get mouse position
             iconTransform.position = Input.mousePosition;
 
+            // on left click
             if (Input.GetMouseButtonDown(0))
             {
-                if(EventSystem.current.IsPointerOverGameObject() == false)
+                if(EventSystem.current.IsPointerOverGameObject() == false) // if NOT over UI element
                 {
+                    // get world position
                     Vector3 worldPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
                     worldPosition.z = 0;
 
+                    // spawn(drop) the item in the world
                     ItemSpawnManager.instance.SpawnItem(
                         worldPosition,
                         itemSlot.item,
                         itemSlot.count);
 
+                    // clear the item from inventory(slot)
                     itemSlot.Clear();
                     itemIcon.SetActive(false);
                 }

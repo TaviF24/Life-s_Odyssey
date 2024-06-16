@@ -52,18 +52,20 @@ public class GameSceneManager : MonoBehaviour
 
 	public void SwitchScene(string sceneTo, Vector3 targetPosition)
 	{
-		load = SceneManager.LoadSceneAsync(sceneTo, LoadSceneMode.Additive);
-		unload = SceneManager.UnloadSceneAsync(currentScene);
-		currentScene = sceneTo;
+		load = SceneManager.LoadSceneAsync(sceneTo, LoadSceneMode.Additive); // start loading the new scene
+		unload = SceneManager.UnloadSceneAsync(currentScene); // start unloading the current scene
+		currentScene = sceneTo; // update the current scene name
 
 		Transform playerTransform = GameManager.instance.player.transform;
 
 		CinemachineBrain currentCam = Camera.main.GetComponent<CinemachineBrain>();
+		// warp the camera to the new position
 		currentCam.ActiveVirtualCamera.OnTargetObjectWarped(
 					playerTransform,
 					targetPosition - playerTransform.position
 					);
 
+		// teleport the player to the new location
 		playerTransform.position =  new Vector3(
 			targetPosition.x, 
 			targetPosition.y,

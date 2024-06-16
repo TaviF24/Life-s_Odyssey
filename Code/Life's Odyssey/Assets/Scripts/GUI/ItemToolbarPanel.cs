@@ -14,6 +14,7 @@ public class ItemToolbarPanel : ItemPanel
 
     public override void OnClick(int id)
     {
+        // use item
         toolbarController.Set(id);
         Highlight(id);
     }
@@ -22,6 +23,7 @@ public class ItemToolbarPanel : ItemPanel
 
     public void Highlight(int id)
     {
+        // show the selected item in toolbar
         buttons[currentSelectedTool].Highlight(false);
         currentSelectedTool = id;
         buttons[currentSelectedTool].Highlight(true);

@@ -24,6 +24,7 @@ public class ItemPanel : MonoBehaviour
     }
 
     private void LateUpdate(){
+        // update inventory panel in case it changes
         if (inventory.isDirty){
             Show();
             inventory.isDirty=false;

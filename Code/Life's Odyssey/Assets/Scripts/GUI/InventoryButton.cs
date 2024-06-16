@@ -14,6 +14,7 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
 
     public void SetIndex(int index)
     {
+        // set index for the inventory buttons inside the panel
         myIndex = index;
     }
 
@@ -24,17 +25,18 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
 
         if (slot.item.stackable == true)
         {
-            text.gameObject.SetActive(true);
+            text.gameObject.SetActive(true); // if item is stackable show the count on inventory screen
             text.text = slot.count.ToString();
         }
         else
         {
-            text.gameObject.SetActive(false);
+            text.gameObject.SetActive(false); // if item is UNstackable do not show count on inventory screen
         }
     }
 
     public void Clean()
     {
+        // clean item from inventory
         icon.sprite = null;
         icon.gameObject.SetActive(false);
 
@@ -44,12 +46,14 @@ public class InventoryButton : MonoBehaviour, IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        // handle clicking on item
         ItemPanel itemPanel = transform.parent.GetComponent<ItemPanel>();
         itemPanel.OnClick(myIndex);
     }
 
     public void Highlight(bool b)
     {
+        // if item is selected
         highlight.gameObject.SetActive(b);
     }
 }

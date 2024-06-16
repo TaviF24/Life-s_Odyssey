@@ -6,9 +6,9 @@ public class CharacterInteractController : MonoBehaviour
 {
     CharacterController2D characterController;
     Rigidbody2D rigidbody2D;
-    [SerializeField] float offsetDistance = 1f;
-    [SerializeField] float sizeOfInteractableArea = 1.2f;
-    Character character;
+    [SerializeField] float offsetDistance = 1f; // distance from the character to check for interactble objects
+    [SerializeField] float sizeOfInteractableArea = 1.2f; // size of the area to check for interactble objects
+    Character character; // main character
     [SerializeReference] HighlightController highlightController;
 
     private void Awake()
@@ -20,8 +20,8 @@ public class CharacterInteractController : MonoBehaviour
 
     private void Update()
     {
-        Check();
-        if (Input.GetMouseButtonDown(1))
+        Check(); // check for interactble objects
+        if (Input.GetMouseButtonDown(1)) // if right mouse button, interact with object
         {
             Interact();
         }
@@ -29,36 +29,36 @@ public class CharacterInteractController : MonoBehaviour
 
     private void Check()
     {
+        // position of interactable object
         Vector2 position = rigidbody2D.position + characterController.lastMotionVector * offsetDistance;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
-
         
-
         foreach (Collider2D collider in colliders)
         {
             Interactable toolHit = collider.GetComponent<Interactable>();
             if (toolHit != null)
             {
-                highlightController.Highlight(toolHit.gameObject);
+                highlightController.Highlight(toolHit.gameObject); // highlight the interactable object if found
                 return;
             }
         }
 
-        highlightController.Hide();
+        highlightController.Hide(); // hide the highlight if the interactble object is not found anymore
         
     }
 
     private void Interact()
     {
+        // position of interactable object
         Vector2 position = rigidbody2D.position + characterController.lastMotionVector * offsetDistance;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(position, sizeOfInteractableArea);
 
         foreach (Collider2D collider in colliders)
         {
             Interactable toolHit = collider.GetComponent<Interactable>();
-            if (toolHit != null)
+            if (toolHit != null) // check if collider has interactable component
             {
-                toolHit.Interact(character);
+                toolHit.Interact(character); // interact with the clicked object if found
                 break;
             }
         }

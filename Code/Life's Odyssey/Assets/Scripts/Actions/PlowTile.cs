@@ -7,17 +7,18 @@ using UnityEngine.Tilemaps;
 public class PlowTile : ToolAction
 {
     [SerializeField] List<TileBase> canPlow;
+
+    // get the highlighted tile on the grid, and plow it if possible
     public override bool OnApplyToTileMap(Vector3Int gridPosition, TileMapReadController tileMapReadController, Item item)
     {
 
         TileBase tileToPlow = tileMapReadController.GetTileBase(gridPosition);
-        // nu apare Plowed pentru Plowable Dirt si nici pentru Grass ???
-         if (canPlow.Contains(tileToPlow) == false) {
+         if (canPlow.Contains(tileToPlow) == false) { // if it's already plowed, don't replow
             return false;
          }
 
         tileMapReadController.cropsManager.Plow(gridPosition);
 
-        return true;
+        return true; // return true only if successfully plowed!
     }
 }

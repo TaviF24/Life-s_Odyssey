@@ -7,11 +7,11 @@ using UnityEngine;
 public class CharacterController2D : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
-    [SerializeField] float speed = 5f;
+    [SerializeField] float speed = 5f; // character movement speed
     Vector2 motionVector;
     public Vector2 lastMotionVector;
     Animator animator;
-    public bool moving;
+    public bool moving; // is the character moving?
 
     void Awake()
     {
@@ -21,21 +21,26 @@ public class CharacterController2D : MonoBehaviour
 
     private void Update()
     {
+        // get raw input from the horizontal and vertical axes
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
+        // set the motion vector based on input
         motionVector.x = horizontal;
         motionVector.y = vertical;
         motionVector = new Vector2( 
             horizontal,
             vertical
             );
+
+        // set the animator with current input values
         animator.SetFloat("horizontal", horizontal);
         animator.SetFloat("vertical", vertical);
 
         moving = horizontal != 0 || vertical != 0;
         animator.SetBool("moving", moving);
 
+        // in case character stops keep last moving vector
         if(horizontal!=0 || vertical != 0)
         {
             lastMotionVector = new Vector2(
@@ -49,6 +54,7 @@ public class CharacterController2D : MonoBehaviour
 
     void FixedUpdate()
     {
+        // move character based on current motion vector
         Move();
     }
 

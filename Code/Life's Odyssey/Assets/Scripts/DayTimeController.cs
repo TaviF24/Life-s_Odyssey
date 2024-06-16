@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class DayTimeController : MonoBehaviour
 {
-    const float secondsInDay = 86400f;
+    const float secondsInDay = 86400f; // seconds in a day(24h*60m*60s)
     const float phaseLength = 900f; // 15 minute chunks
 
     [SerializeField] Color nightLightColor;
@@ -16,9 +16,9 @@ public class DayTimeController : MonoBehaviour
      
     float time;
 
-    [SerializeField] float startAtTime = 28800f; // in seconds
+    [SerializeField] float startAtTime = 28800f; // start time in seconds (8:00 AM)
     [SerializeField] Text text;
-    [SerializeField] float timeScale = 60f;
+    [SerializeField] float timeScale = 60f; // 1 in game second = 1 real time minute
     [SerializeField] Light2D globalLight;
     private int days;
 
@@ -48,7 +48,7 @@ public class DayTimeController : MonoBehaviour
     {
         get
         {
-            return time / 3600f;
+            return time / 3600f; // get current time in hours
         }
     }
 
@@ -56,7 +56,7 @@ public class DayTimeController : MonoBehaviour
     {
         get
         {
-            return time % 3600f / 60f;
+            return time % 3600f / 60f; // get current time in minutes
         }
     }
 
@@ -64,11 +64,11 @@ public class DayTimeController : MonoBehaviour
     {
         time += Time.deltaTime * timeScale;
         TimeValueCalculation();
-        DayLight();
+        DayLight(); // update the light based on the current time
 
         if (time > secondsInDay)
         {
-            NextDay();
+            NextDay(); // check for a new day
         }
 
         TimeAgents();
@@ -77,6 +77,7 @@ public class DayTimeController : MonoBehaviour
     
     private void TimeValueCalculation()
     {
+        // display text on screen with current time
         int hh = (int)Hours;
         int mm = (int)Minutes;
         text.text = "Days: " + days.ToString() + " | " + hh.ToString("00") + ":" + mm.ToString("00") + ":" + days.ToString();
@@ -84,6 +85,7 @@ public class DayTimeController : MonoBehaviour
 
     private void DayLight()
     {
+        // calculate the dim value
         float v = nightTimeCurve.Evaluate(Hours);
         Color c = Color.Lerp(dayLightColor, nightLightColor, v);
         globalLight.color = c;

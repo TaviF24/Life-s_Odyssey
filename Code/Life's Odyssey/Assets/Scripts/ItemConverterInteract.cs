@@ -19,11 +19,11 @@ public class ItemConvertorData
 [RequireComponent(typeof(TimeAgent))]
 public class ItemConverterInteract : Interactable, IPersistent
 {
-    [SerializeField] Item convertableItem;
-    [SerializeField] Item producedItem;
-    [SerializeField] int producedItemCount = 1;
+    [SerializeField] Item convertableItem; // the item that is being converted
+    [SerializeField] Item producedItem; // the item that is being produced
+    [SerializeField] int producedItemCount = 1; // number of items to produce
 
-    [SerializeField] int timeToProcess = 5;
+    [SerializeField] int timeToProcess = 5; // time required to process the item
 
     ItemConvertorData data;
 
@@ -44,6 +44,7 @@ public class ItemConverterInteract : Interactable, IPersistent
 
     private void ItemConvertProcess()
     {
+        // start the conversion process if there is an item to process
         if (data.itemSlot == null) { return; }
         if (data.timer > 0)
         {
@@ -59,12 +60,14 @@ public class ItemConverterInteract : Interactable, IPersistent
     {
         if(data.itemSlot.item == null)
         {
+            // check if the item can be converted
             if (GameManager.instance.dragAndDropController.Check(convertableItem))
             {
                 StartItemProcessing(GameManager.instance.dragAndDropController.itemSlot);
                 return;
             }
 
+            // check the toolbar for the convertible item
             ToolbarController toolbarController = character.GetComponent<ToolbarController>();
             if(toolbarController == null)
             {
@@ -72,7 +75,7 @@ public class ItemConverterInteract : Interactable, IPersistent
             }
 
             ItemSlot itemSlot = toolbarController.GetItemSlot;
-
+            // start the item processing if the item matches
             if(itemSlot.item == convertableItem)
             {
                 StartItemProcessing(itemSlot);
@@ -80,6 +83,7 @@ public class ItemConverterInteract : Interactable, IPersistent
             }
         }
 
+        // if the item is done processing and is ready, add it to the inventory
         if(data.itemSlot.item != null && data.timer <= 0)
         {
             GameManager.instance.inventoryContainer.Add(data.itemSlot.item, data.itemSlot.count);
@@ -89,6 +93,7 @@ public class ItemConverterInteract : Interactable, IPersistent
 
     private void StartItemProcessing(ItemSlot toProcess)
     {
+        // copy the item to the conversion slot and update the count
         data.itemSlot.Copy(GameManager.instance.dragAndDropController.itemSlot);
         data.itemSlot.count = 1;
         if (toProcess.item.stackable)
@@ -104,6 +109,7 @@ public class ItemConverterInteract : Interactable, IPersistent
             toProcess.Clear();
         }
 
+        // set timer and start processing animation
         data.timer = timeToProcess;
         Animate();
     }

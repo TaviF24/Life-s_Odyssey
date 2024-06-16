@@ -69,31 +69,32 @@ public class ItemContainer : ScriptableObject
         isDirty=true;
         if (itemToRemove.stackable)
         {
-            ItemSlot itemSlot = slots.Find(x => x.item == itemToRemove);
-            if (itemSlot == null) { return; }
+            ItemSlot itemSlot = slots.Find(x => x.item == itemToRemove); // if the item is stackable, find it
+            if (itemSlot == null) { return; } // if it is null, ignore
             
-            itemSlot.count -= count;
+            itemSlot.count -= count; // decrease its counter
 
             if (itemSlot.count <= 0)
             {
-                itemSlot.Clear();
+                itemSlot.Clear(); // delete it from inventory
             }
         }
-        else
+        else // if item is UNstackable
         {
             while (count > 0)
             {
                 count -= 1;
 
-                ItemSlot itemSlot = slots.Find(x => x.item == itemToRemove);
+                ItemSlot itemSlot = slots.Find(x => x.item == itemToRemove); // find the item
                 if (itemSlot == null) { return; }
-                itemSlot.Clear();
+                itemSlot.Clear(); // delete only 1 from inventory
             }
         }
     }
 
     internal bool CheckItem(ItemSlot checkingItem)
     {
+        // check if an item exists in inventory
         ItemSlot itemSlot=slots.Find(x => x.item ==checkingItem.item);
         if(itemSlot==null){return false;}
         if(checkingItem.item.stackable){return itemSlot.count>checkingItem.count;}
@@ -103,6 +104,7 @@ public class ItemContainer : ScriptableObject
 
     internal bool FreeSpace()
     {
+        // check whether or not there is free space in the inventory
         for(int i=0;i<slots.Count;i++)
         {
             if(slots[i].item==null){
@@ -113,6 +115,7 @@ public class ItemContainer : ScriptableObject
     }
 
     internal void Init(){
+        // initialize the inventory with 36 slots
         slots=new List<ItemSlot>();
         for(int i=0;i<36;i++)
         {

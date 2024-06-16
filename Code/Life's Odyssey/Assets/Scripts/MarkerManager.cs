@@ -21,6 +21,7 @@ public class MarkerManager : MonoBehaviour
             return;
         }
 
+        // show marker on tile map
         targetTilemap.SetTile(oldCellPosition, null);
         targetTilemap.SetTile(markedCellPosition, tile);
         oldCellPosition = markedCellPosition;

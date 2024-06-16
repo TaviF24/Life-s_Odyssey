@@ -40,6 +40,7 @@ public class ToolbarController : MonoBehaviour
 
     private void Update()
     {
+        // get selected item in toolbar
         float delta = Input.mouseScrollDelta.y;
         if(delta != 0)
         {
@@ -59,6 +60,7 @@ public class ToolbarController : MonoBehaviour
 
     public void UpdateHighlightIcon(int id = 0)
     {
+        // highlight the selected item in the toolbar
         Item item = GetItem;
         if(item==null){
             iconHighlight.Show= false;

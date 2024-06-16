@@ -8,7 +8,7 @@ public class MusicManager : MonoBehaviour
 
     private void Awake()
     {
-        instance = this;
+        instance = this; // SINGLETON
     }
 
     [SerializeField] AudioSource audioSource;

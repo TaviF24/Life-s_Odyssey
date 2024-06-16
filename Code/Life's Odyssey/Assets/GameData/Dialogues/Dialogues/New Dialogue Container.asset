@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: New Dialogue Container
   m_EditorClassIdentifier: 
   lines:
-  - Salut
-  - bine ai venit
-  - la mine acasa!
+  - Salut!
+  - Pentru diversele resurse din lume
+  - vei avea nevoie de diferite unelte,
+  - 'cum ar fi: tarnacop, topor sau sapa!'
   actor: {fileID: 11400000, guid: 57086be26e36c8647859af70c94d43d4, type: 2}

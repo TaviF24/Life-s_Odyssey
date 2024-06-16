@@ -17,6 +17,7 @@ public class RecipePanel : ItemPanel
 
     public override void OnClick(int id)
     {
+        // craft the selected recipe if possible
         if(id>= recipeList.recipes.Count){return;}
 
         crafting.Craft(recipeList.recipes[id]);

@@ -35,8 +35,8 @@ public class Stat
 }
 public class Character : MonoBehaviour
 {
-   public Stat hp;
-   [SerializeField] StatusBar hpBar;
+    public Stat hp;
+    [SerializeField] StatusBar hpBar;
     public Stat stamina;
     [SerializeField] StatusBar staminaBar;
     public bool isDead;

@@ -14120,7 +14120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b01a1e04117dd428f9938fe82cc1b384, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 4
+  runningSpeed: 7
   lastMotionVector: {x: 0, y: 0}
   moving: 0
 --- !u!50 &1695382881
@@ -14228,13 +14229,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp:
     maxVal: 100
-    currVal: 80
+    currVal: 100
   hpBar: {fileID: 271352253628228348}
   stamina:
     maxVal: 500
-    currVal: 250
+    currVal: 500
   staminaBar: {fileID: 1993600490}
   isDead: 0
+  isExhausted: 0
 --- !u!114 &1695382885
 MonoBehaviour:
   m_ObjectHideFlags: 0

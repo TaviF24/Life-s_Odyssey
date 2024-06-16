@@ -110,64 +110,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cave_wall_center
+      name: cave_0
       rect:
         serializedVersion: 2
-        x: 29
-        y: 320
-        width: 22
-        height: 22
-      alignment: 9
-      pivot: {x: 0.48980904, y: 0.4487956}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae844563e64a8b1469eb00d828412022
-      internalID: 1870200704
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cave_hole
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 288
+        x: 16
+        y: 354
         width: 48
-        height: 48
+        height: 46
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c342b42caedc9e47b89a00299052dcb
-      internalID: 532005631
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cave_wal
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 305
-        width: 46
-        height: 50
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aad878b4ff8faf04a9bb70de78dfdcb5
-      internalID: -195633600
+      spriteID: 543f76e881750416e93409ef82eec896
+      internalID: -1251095673
       vertices: []
       indices: 
       edges: []
@@ -183,6 +141,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      cave_0: -1251095673
+      cave_WALL: 1675127785
+      cave_entrace: -261724105
       cave_hole: 532005631
       cave_wal: -195633600
       cave_wall_center: 1870200704

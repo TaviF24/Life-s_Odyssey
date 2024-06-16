@@ -21180,7 +21180,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Overworld_1030
+      name: cave_wall
       rect:
         serializedVersion: 2
         x: 192
@@ -22091,7 +22091,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -22112,7 +22112,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -22133,7 +22133,7 @@ TextureImporter:
         width: 48
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -22211,7 +22211,6 @@ TextureImporter:
       Overworld_1028: 266765963
       Overworld_1029: -699574752
       Overworld_103: -960082547
-      Overworld_1030: 2067606090
       Overworld_1031: -2088557275
       Overworld_1032: -596625679
       Overworld_1033: -1331768347
@@ -23231,6 +23230,7 @@ TextureImporter:
       WaterRight: -1785648449
       WaterRightTop: -277755358
       WaterTop: 778961504
+      cave_wall: 2067606090
       fountain1: 1169901261
       fountain2: -1045154559
       fountain3: -421447850

@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/HomeScene.unity
+    path: Assets/Scenes/FarmScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/RoadScene.unity
     guid: 185e4bab4adb8e74f8f5f887badde12a
+  - enabled: 1
+    path: Assets/Scenes/CityScene.unity
+    guid: 791928be36c1648d6bfcb13e5f893b51
+  - enabled: 1
+    path: Assets/Scenes/ForestScene.unity
+    guid: c670f9f92905d45f9a047735256ae965
+  - enabled: 1
+    path: Assets/Scenes/BeachScene.unity
+    guid: 21a7e5b954b774e49a5f8fd029ff75e9
   m_configObjects: {}

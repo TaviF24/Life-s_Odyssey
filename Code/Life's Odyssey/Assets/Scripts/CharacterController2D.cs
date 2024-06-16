@@ -7,11 +7,14 @@ using UnityEngine;
 public class CharacterController2D : MonoBehaviour
 {
     Rigidbody2D rigidbody2d;
-    [SerializeField] float speed = 5f; // character movement speed
+    [SerializeField] float speed ; // character movement speed
+    [SerializeField] float runningSpeed; // character running speed
     Vector2 motionVector;
     public Vector2 lastMotionVector;
     Animator animator;
     public bool moving; // is the character moving?
+
+    bool running;
 
     void Awake()
     {
@@ -21,6 +24,16 @@ public class CharacterController2D : MonoBehaviour
 
     private void Update()
     {
+        // if left shift is pressed and character is not exhausted, start running
+        if(Input.GetKeyDown(KeyCode.LeftShift) && GetComponent<Character>().isExhausted==false)
+        {
+            running = true;
+        }
+        // if left shift is released or character is exhausted, stop running
+        if(Input.GetKeyUp(KeyCode.LeftShift) || GetComponent<Character>().isExhausted==true)
+        {
+            running = false;
+        }   
         // get raw input from the horizontal and vertical axes
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
@@ -60,6 +73,6 @@ public class CharacterController2D : MonoBehaviour
 
     private void Move()
     {
-        rigidbody2d.velocity = motionVector * speed;
+        rigidbody2d.velocity = motionVector * (running==true ? runningSpeed : speed);
     }
 }

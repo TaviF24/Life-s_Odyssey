@@ -40,12 +40,15 @@ public class Character : MonoBehaviour
     public Stat stamina;
     [SerializeField] StatusBar staminaBar;
     public bool isDead;
-    private bool isExhausted;
+    public bool isExhausted;
 
     void Start(){
         UpdateHPBar();
-        UpdateStaminaBar(); 
+        UpdateStaminaBar();
+        StartCoroutine(HandleStamina());
     }
+
+
 
     private void UpdateStaminaBar()
     {
@@ -73,12 +76,6 @@ public class Character : MonoBehaviour
         
     }
 
-    public void FullHeal()
-    {
-        hp.SetToMax(); 
-        UpdateHPBar();
-    }
-
     public void getTired(int amount)
     {
         stamina.Substract(amount);
@@ -91,25 +88,24 @@ public class Character : MonoBehaviour
     public void Rest(int amount)
     {
         stamina.Add(amount);
+        if(stamina.currVal==stamina.maxVal){
+            isExhausted = false;
+        }
         UpdateStaminaBar();
     }
 
-    public void FullRest()
+        // Update is called once per frame
+        private IEnumerator HandleStamina()
     {
-        stamina.SetToMax();
-        UpdateStaminaBar();
-    }
-
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.Alpha1)){
-            TakeDamage(10);
-        }
-        if(Input.GetKeyDown(KeyCode.Alpha2)){
-            Heal(10);
-        }
-        if(Input.GetKeyDown(KeyCode.Alpha3)){
-            FullHeal();
+        while (true)
+        {
+            if(Input.GetKey(KeyCode.LeftShift) && !isExhausted){
+                getTired(1);
+            }else{
+                Rest(1);
+            }
+            yield return new WaitForSeconds(0.01f);
         }
     }
+    
 }

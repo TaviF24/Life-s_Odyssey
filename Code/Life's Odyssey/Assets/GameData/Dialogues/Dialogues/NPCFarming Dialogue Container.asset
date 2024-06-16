@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cce003ec67ac040a4fbd00c37f33d5, type: 3}
+  m_Name: NPCFarming Dialogue Container
+  m_EditorClassIdentifier: 
+  lines:
+  - Salut! Bine ai venit la ferma mea!
+  - In primul rand, va trebui sa semeni pamantul folosind sapa din inventar.
+  - Dupa asta, poti planta semintele pe care le ai.
+  - Dupa un interval de timp, plantele vor creste si vor fi gata de cules.
+  - Dar ai grija, daca nu culegi planta in timp, aceasta se va ofili!
+  actor: {fileID: 11400000, guid: 63049c5a57e443d48a2e06342f2c440b, type: 2}

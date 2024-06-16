@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: New Dialogue Container
   m_EditorClassIdentifier: 
   lines:
-  - Salut!
-  - Pentru diversele resurse din lume
-  - vei avea nevoie de diferite unelte,
-  - 'cum ar fi: tarnacop, topor sau sapa!'
+  - Bine ai venit!
+  - Pentru a va misca caracterul, utilizati WASD.
+  - Pentru a alerga folositi LSHIFT. Tineti cont de energia caracterului sa nu oboseasca!
+  - Pentru a interactiona cu obiecte, precum persoane foloseste click dreapta.
+  - Comunica si cu alte personaje ca sa afli mai multe detalii!
   actor: {fileID: 11400000, guid: 57086be26e36c8647859af70c94d43d4, type: 2}

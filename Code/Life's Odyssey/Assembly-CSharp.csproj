@@ -74,6 +74,7 @@
     <Compile Include="Assets\Scripts\Data\RecipeList.cs" />
     <Compile Include="Assets\Scripts\ItemConverterInteract.cs" />
     <Compile Include="Assets\Scripts\InventoryController.cs" />
+    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\CharacterController2D.cs" />
     <Compile Include="Assets\Scripts\ItemDragAndDropController.cs" />
     <Compile Include="Assets\Scripts\ItemContainerInteractController.cs" />
@@ -116,6 +117,7 @@
     <Compile Include="Assets\Scripts\GUI\PanelGroup.cs" />
     <Compile Include="Assets\Scripts\Actions\TilePickUpAction.cs" />
     <Compile Include="Assets\Scripts\GUI\ItemToolbarPanel.cs" />
+    <Compile Include="Assets\Scripts\Data\PlayerData.cs" />
     <Compile Include="Assets\Scripts\Data\Actor.cs" />
     <Compile Include="Assets\Scripts\DayTimeController.cs" />
     <Compile Include="Assets\Scripts\PlaceableObjectsManager.cs" />

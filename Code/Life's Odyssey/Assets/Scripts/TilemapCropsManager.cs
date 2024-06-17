@@ -16,7 +16,10 @@ public class TilemapCropsManager : TimeAgent
 
     [SerializeField] CropsContainer container;
 
-    private void Start()
+	[SerializeField] AudioClip onPlowAudio;
+	[SerializeField] AudioClip onSeedAudio;
+
+	private void Start()
     {
         GameManager.instance.GetComponent<CropsManager>().cropsManager = this;
         targetTilemap = GetComponent<Tilemap>();
@@ -100,7 +103,9 @@ public class TilemapCropsManager : TimeAgent
 
         if (tile == null) { return; }
 
-        targetTilemap.SetTile(position, seeded);
+		AudioManager.instance.Play(onSeedAudio);
+
+		targetTilemap.SetTile(position, seeded);
 
         tile.crop = toSeed;
     }
@@ -134,7 +139,9 @@ public class TilemapCropsManager : TimeAgent
 
         crop.position = position;
 
-        VisualizeTile(crop);
+		AudioManager.instance.Play(onPlowAudio);
+
+		VisualizeTile(crop);
 
         targetTilemap.SetTile(position, plowed);
     }

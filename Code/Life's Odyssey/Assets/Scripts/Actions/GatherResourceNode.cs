@@ -25,11 +25,11 @@ public class GatherResourceNode : ToolAction
             if (toolHit != null)
             {
                 if (toolHit.CanBeHit(canHitNodesOfType) == true)
-                {
-                    toolHit.Hit();
-                    return true;
-                }
-            }
+				{
+					toolHit.Hit();
+					return true;
+				}
+			}
         }
 
         return false;

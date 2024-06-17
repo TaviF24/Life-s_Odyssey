@@ -13,11 +13,23 @@ public class ResourceNode : ToolHit
     [SerializeField] int itemCountInOneDrop = 1;
     [SerializeField] ResourceNodeType nodeType;
 
-    // when hitting a resource, spawn 5 dropped corresponding items around the resource
-    public override void Hit()
+	[SerializeField] AudioClip onTreeAudio;
+	[SerializeField] AudioClip onOreAudio;
+
+
+	// when hitting a resource, spawn 5 dropped corresponding items around the resource
+	public override void Hit()
     {
-        // spawn items around the resource
-        while (dropCount > 0)
+        if (nodeType == ResourceNodeType.Tree)
+        {
+			AudioManager.instance.Play(onTreeAudio);
+		} 
+        else if (nodeType == ResourceNodeType.Ore)
+        {
+			AudioManager.instance.Play(onOreAudio);
+		}
+		// spawn items around the resource
+		while (dropCount > 0)
         {
             dropCount--;
             // get position of resource and drop items around specified range

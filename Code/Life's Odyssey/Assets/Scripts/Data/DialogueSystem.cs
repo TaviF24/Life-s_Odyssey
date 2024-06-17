@@ -19,7 +19,9 @@ public class DialogueSystem : MonoBehaviour
     float totalTimeToType, currentTime;
     string lineToShow;
 
-    private void Update()
+	[SerializeField] AudioClip onInteractAudio;
+
+	private void Update()
     {
         // show the whole text if left clicked
         if (Input.GetMouseButtonDown(0))
@@ -84,7 +86,8 @@ public class DialogueSystem : MonoBehaviour
         Show(true);
         currentDialogue = dialogueContainer;
         currentTextLine = 0;
-        CycleLine();
+		AudioManager.instance.Play(onInteractAudio);
+		CycleLine();
         UpdatePortrait();
     }
 

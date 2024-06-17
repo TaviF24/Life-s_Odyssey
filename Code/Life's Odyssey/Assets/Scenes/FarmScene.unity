@@ -429,6 +429,8 @@ MonoBehaviour:
   seeded: {fileID: 11400000, guid: c4984a0a25c71cb4f849c7b3207e8af8, type: 2}
   cropsSpritePrefab: {fileID: 5190806748521687399, guid: e43fdfd9e327a6a439b856e767f6e9c8, type: 3}
   container: {fileID: 11400000, guid: bd5335e6021307746bfbe68e177aab60, type: 2}
+  onPlowAudio: {fileID: 8300000, guid: 87df62ed6a575b84faaf149a34aac7c4, type: 3}
+  onSeedAudio: {fileID: 8300000, guid: dad3a99517c03c2469b655aeaf3c68e3, type: 3}
 --- !u!1001 &532426181
 PrefabInstance:
   m_ObjectHideFlags: 0

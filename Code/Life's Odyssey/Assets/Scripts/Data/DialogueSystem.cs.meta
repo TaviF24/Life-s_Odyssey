@@ -3,7 +3,11 @@ guid: 32b782c656414f14e85fc7d99be503ca
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - targetText: {instanceID: 0}
+  - nameText: {instanceID: 0}
+  - portrait: {instanceID: 0}
+  - onInteractAudio: {fileID: 8300000, guid: a72be6c554f943e43a05854c298656e7, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

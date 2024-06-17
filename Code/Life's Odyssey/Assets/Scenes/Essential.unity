@@ -1278,7 +1278,7 @@ MonoBehaviour:
   dayLightColor: {r: 1, g: 1, b: 1, a: 1}
   startAtTime: 28800
   text: {fileID: 1758820431}
-  timeScale: 4000
+  timeScale: 2000
   globalLight: {fileID: 2020825668}
 --- !u!114 &129940702
 MonoBehaviour:
@@ -4868,7 +4868,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.36, y: 20.57, z: -9.07}
+  m_LocalPosition: {x: 35.1, y: 5.9, z: -9.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11282,7 +11282,7 @@ Transform:
   m_GameObject: {fileID: 1270568682}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.36, y: 20.57, z: -9.07}
+  m_LocalPosition: {x: 35.1, y: 5.9, z: -9.07}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -14182,7 +14182,7 @@ Transform:
   m_GameObject: {fileID: 1695382876}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 39.36, y: 20.57, z: 0.93}
+  m_LocalPosition: {x: 35.1, y: 5.9, z: 0.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
